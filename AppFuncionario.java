@@ -9,7 +9,7 @@ public class AppFuncionario {
         String nome, cargo;
         double salario;
 
-        while (escolha != 4) {
+        while (escolha != 3) {
             System.out.println("::::::Menu::::::");
             System.out.println("1-Cadastrar novo funcionario");
             System.out.println("2- listar funcionarios");
@@ -42,6 +42,9 @@ public class AppFuncionario {
 
                     }
                     break;
+                    case 3:
+                    System.out.println("programa encerrado");
+                    escolha =3;
                 default:
                     break;
             }
