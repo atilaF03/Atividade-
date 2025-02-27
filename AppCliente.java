@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class AppCliente {
-
+ 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<Cliente> list = new ArrayList();
@@ -14,14 +14,15 @@ public class AppCliente {
             System.out.println("2-consultar cliente");
 
             op = sc.nextInt();
+            sc.nextLine();
             switch (op) {
                 case 1:
                     System.out.println("Insira um nome ");
-                    String nome = sc.next();
+                    String nome = sc.nextLine();
                     System.out.println("Insira um email");
-                    String email = sc.next();
+                    String email = sc.nextLine();
                     System.out.println("insira um telefone");
-                    String telefone = sc.next();
+                    String telefone = sc.nextLine();
                     list.add(new Cliente(nome, email, telefone));
 
                     break;
